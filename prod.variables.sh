@@ -37,17 +37,20 @@
 # ---------------------------------------------------------------------
 # ENV Vars for API Service
 # ---------------------------------------------------------------------
-DATABASE_URL="file:./prod.db"
-JWT_SECRET="e5a9856cd61240bd110c2aef568318db9b32b5d8fe4ae76bba283cb7d0361328"
-PORT=4100
-NODE_ENV=production
-FRONTEND_ORIGIN="https://app.embarko.com"   # placeholder until the dashboard frontend exists — see below
-HOSTNSOFT_DEPLOY_URL="https://ship.embarko.com"
+export DATABASE_URL="file:./prod.db"
+export JWT_SECRET="e5a9856cd61240bd110c2aef568318db9b32b5d8fe4ae76bba283cb7d0361328"
+export PORT=4100
+export NODE_ENV=production
+export FRONTEND_ORIGIN="https://app.embarko.ai"   # placeholder until the dashboard frontend exists — see below
+export HOSTNSOFT_DEPLOY_URL="https://ship.embarko.ai"
 
-MSG91_AUTHKEY="dbc2b79e90d5ee493948fcf6556c2c9a"
-MSG91_GENERATE_AUTH_TOKEN_URL="https://routes.msg91.com/api/117230j17876397376a8d37b972ce7/generateAuthToken"
+export MSG91_AUTHKEY="dbc2b79e90d5ee493948fcf6556c2c9a"
+export MSG91_GENERATE_AUTH_TOKEN_URL="https://routes.msg91.com/api/117230j17876397376a8d37b972ce7/generateAuthToken"
+
+
 
 # ---------------------------------------------------------------------
 # ENV Vars for Deploy Service
 # ---------------------------------------------------------------------
-HOSTNSOFT_API_URL="http://127.0.0.1:4100"
+export HOSTNSOFT_API_URL="http://127.0.0.1:4100"
+
