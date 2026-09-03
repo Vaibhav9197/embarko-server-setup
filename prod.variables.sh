@@ -53,4 +53,5 @@ export MSG91_GENERATE_AUTH_TOKEN_URL="https://routes.msg91.com/api/117230j178763
 # ENV Vars for Deploy Service
 # ---------------------------------------------------------------------
 export HOSTNSOFT_API_URL="http://127.0.0.1:4100"
+export APPS_DOMAIN_SUFFIX="app.embarko.ai"
 
