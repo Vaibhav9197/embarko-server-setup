@@ -30,6 +30,15 @@ export DEPLOY_SUBDOMAIN="${DEPLOY_SUBDOMAIN:-ship}"
 export APPS_SUBDOMAIN_BASE="${APPS_SUBDOMAIN_BASE:-app}"
 export APP_USER="${APP_USER:-ubuntu}"
 
+# This box already had DNS + a valid cert for the bare ship.hostnsoft.com
+# / app.hostnsoft.com from before server-setup.sh's env-naming scheme
+# existed — serve this "test" environment off those instead of
+# provisioning new ship.test.hostnsoft.com / app.test.hostnsoft.com
+# records. Directory names, pm2 process names, and ports are unaffected —
+# this only changes the domain. See server-setup.sh's DOMAIN_ENV_SEGMENT
+# comment for how this override works.
+export DOMAIN_ENV_SEGMENT=""
+
 # ---------------------------------------------------------------------
 # Guard: refuse to proceed with unfilled placeholders
 # ---------------------------------------------------------------------
