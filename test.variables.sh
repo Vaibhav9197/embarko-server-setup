@@ -47,6 +47,17 @@ export HOSTNSOFT_DEPLOY_URL="https://ship.hostnsoft.com"
 export MSG91_AUTHKEY="dbc2b79e90d5ee493948fcf6556c2c9a"
 export MSG91_GENERATE_AUTH_TOKEN_URL="https://routes.msg91.com/api/117230j17876397376a8d37b972ce7/generateAuthToken"
 
+# EDGE_HOSTNAME, ORIGIN_SERVER_IP, INTERNAL_API_SECRET (custom domains —
+# see api-service's docs/Customdomain-req.md) are NOT set here — all
+# three are computed/generated automatically by server-setup.sh itself.
+# Do not override them here unless you specifically need to force a
+# different value.
+
+# Optional — both have sensible defaults, uncomment only to override.
+# export DOMAIN_REVERIFICATION_INTERVAL_MS=86400000
+# export ORPHAN_TTL_MS=86400000
+# export ORPHAN_CLEANUP_INTERVAL_MS=3600000
+
 
 
 # ---------------------------------------------------------------------
@@ -54,4 +65,6 @@ export MSG91_GENERATE_AUTH_TOKEN_URL="https://routes.msg91.com/api/117230j178763
 # ---------------------------------------------------------------------
 export HOSTNSOFT_API_URL="http://127.0.0.1:4100"
 export APPS_DOMAIN_SUFFIX="app.hostnsoft.com"
+
+# INTERNAL_API_SECRET is NOT set here either — see the note above.
 
